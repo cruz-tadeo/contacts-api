@@ -68,7 +68,8 @@ controller.getContact = (req, res) => {
   if (req.method !== "GET") return res.status(405).end();
   res.setHeader("Content-Type", "application/json");
   req.getConnection((err, conn) => {
-    const id = req.params.id ? req.query.id : null;
+    const id = req.params.id ? req.params.id : null;
+    console.log(id,"prueba");
     if (!id) return res.status(404).render("404");
     let query = `SELECT * FROM contacts WHERE id = ${id}`;
     conn.query(query, (err, data) => {
