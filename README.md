@@ -11,8 +11,8 @@ $ npm run dev
 
 # name of routes than used
 
-## GET CONTACTS WITH A PHRASE
-$ route: /contacts?name=value 
+# GET CONTACTS WITH A PHRASE
+### route: /contacts?name=value 
 
 ```
 
